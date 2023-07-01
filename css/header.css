@@ -1,4 +1,9 @@
 /* INÍCIO HEADER */
+header
+{
+    margin-top: 10px;
+}
+
 header p 
 {
     font-weight: bold;

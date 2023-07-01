@@ -13,33 +13,33 @@
 <body>
     <header>
         <h1>Calculadora JS</h1>
-        <p>C limpar display | &longleftarrow; apagar | X multiplicação | \ divisão | + adição | - subtração</p>
+        <!-- <p>C limpar display | &longleftarrow; apagar | X multiplicação | \ divisão | + adição | - subtração</p> -->
     </header>
 
     <main>
         <section>
             <div id="calculadora">
                 <div id="display">
-                    <p>sadsda</p>
+                    <p id="texto"></p>
                 </div>
-                <button class="botao">C</button>
-                <button class="botao">&longleftarrow;</button>
-                <button class="botao">/</button>
-                <button class="botao">X</button>
-                <button class="botao">7</button>
-                <button class="botao">8</button>
-                <button class="botao">9</button>
-                <button class="botao">-</button>
-                <button class="botao">4</button>
-                <button class="botao">5</button>
-                <button class="botao">6</button>
-                <button class="botao">+</button>
-                <button class="botao">1</button>
-                <button class="botao">2</button>
-                <button class="botao">3</button>
-                <button class="botao igual">=</button>
-                <button class="botao zero">0</button>
-                <button class="botao">.</button>
+                <button class="botao" onclick="limpar()">C</button>
+                <button class="botao" onclick="inserir('/')">/</button>
+                <button class="botao" onclick="inserir('*')">X</button>
+                <button class="botao" onclick="apagar()">&longleftarrow;</button>
+                <button class="botao" onclick="inserir('7')">7</button>
+                <button class="botao" onclick="inserir('8')">8</button>
+                <button class="botao" onclick="inserir('9')">9</button>
+                <button class="botao" onclick="inserir('-')">-</button>
+                <button class="botao" onclick="inserir('4')">4</button>
+                <button class="botao" onclick="inserir('5')">5</button>
+                <button class="botao" onclick="inserir(6)">6</button>
+                <button class="botao" onclick="inserir('+')">+</button>
+                <button class="botao" onclick="inserir('1')">1</button>
+                <button class="botao" onclick="inserir('2')">2</button>
+                <button class="botao" onclick="inserir('3')">3</button>
+                <button class="botao igual" onclick="calcular()">=</button>
+                <button class="botao zero" onclick="inserir('0')">0</button>
+                <button class="botao" onclick="inserir('.')">.</button>
             </div>
         </section>
     </main>
@@ -48,4 +48,5 @@
         <p>Desenvolvido por Henrique Rojo</p>
     </footer>
 </body>
+<script src="js/script.js"></script>
 </html>
