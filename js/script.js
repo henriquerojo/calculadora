@@ -18,12 +18,12 @@ function apagar()
 function calcular()
 {
     var resultado = document.getElementById('texto').innerHTML;
-    if (resultado == true)
+    if (/^\d+$/.test(resultado))
     {
-        document.getElementById('texto').innerHTML = eval('texto');
+        limpar();
     }
     else
     {
-        document.getElementById('texto').innerHTML = "";
+        document.getElementById('texto').innerHTML = eval(resultado);
     }
 }
